@@ -2,11 +2,11 @@
 
 To run Program: 
 All commands run on terminal
-1. cd into APW_JS_MW (may be differnt directory for you)
-2. cd into Final2
-3. npm run devStart (script restarts the node application)
+1. cd APW_JS_MW       (may be differnt directory for you)
+2. cd Final2
+3. npm run devStart   (script restarts the node application)
 4. open browser
-5. In the URL type: localhost:3000
+5. In the URL type:   localhost:3000
 
 Work Cited:
 (These sites were used to help create the code)
