@@ -1,6 +1,7 @@
 # finalproject
 To run Program: 
-1. Open terminal
+0. Open terminal
+1. git clone https://github.com/SandeepReji/finalproject
 2. cd APW_JS_MW       (may be differnt directory for you)
 3. cd finalproject
 4. cd Final2
@@ -10,9 +11,18 @@ To run Program:
 
 Work Cited:
 (These videos and websites played an integral part of writing the code)
-https://www.youtube.com/watch?v=JH4qVqplC8E
-https://www.youtube.com/watch?v=1NrHkjlWVhM
+Author names were not specifically included so instead I added the specific 
+links to exactly what helped me make the program. 
+
+Programming with Mosh
+rdzfinalrounduser
+Web Dev Simplified
+AcademindfreeCodeCamp
 https://www.youtube.com/watch?v=TlB_eWDSMt4
+https://www.youtube.com/watch?v=EMwu8F0dCXE
+https://www.youtube.com/watch?v=pKd0Rpw7O48
+https://www.youtube.com/watch?v=1NrHkjlWVhM
+https://www.youtube.com/watch?v=JH4qVqplC8E
 https://mongoosejs.com/docs/connections.html
 https://mongoosejs.com/docs/4.x/docs/connections.html
 https://www.npmjs.com/package/ejs
