@@ -1,19 +1,23 @@
 # finalproject
-
 To run Program: 
-All commands run on terminal
-1. cd APW_JS_MW       (may be differnt directory for you)
-2. cd finalproject
-2. cd Final2
-3. npm run devStart   (script restarts the node application)
-4. open browser
-5. In the URL type:   localhost:3000
+1. Open terminal
+2. cd APW_JS_MW       (may be differnt directory for you)
+3. cd finalproject
+4. cd Final2
+5. npm run devStart   (script restarts the node application)
+6. open browser
+7. In the browser type:   localhost:3000
 
 Work Cited:
-(These video played an integral part of writing the code)
+(These videos and websites played an integral part of writing the code)
 https://www.youtube.com/watch?v=JH4qVqplC8E
 https://www.youtube.com/watch?v=1NrHkjlWVhM
 https://www.youtube.com/watch?v=TlB_eWDSMt4
+https://mongoosejs.com/docs/connections.html
+https://mongoosejs.com/docs/4.x/docs/connections.html
+https://www.npmjs.com/package/ejs
+https://www.digitalocean.com/community/tutorials/how-to-use-ejs-to-template-your-node-application
+https://www.youtube.com/watch?v=G8uL0lFFoN0
 
 All Dependencies (required items)
 (download if neccessary, but should come with everything)
