@@ -37,14 +37,16 @@ router.delete('/:id', async (req, res)=>{
     await Article.findByIdAndDelete(req.params.id)
     res.redirect('/')
 })
-function saveArticleAndRedirect(path){
+function saveArticleAndRedirect(path){ 
+    /*The Following saves the inputted values under article so that they may be printed and read by the user after there location is saved,
+    Each tag goes refers to a different value (eg. Climate is the inputted climate of the location).*/
     return async (req, res)=>{
         
         let article = req.article
 
             article.title = req.body.title
             article.description = req.body.description
-            article.climate= req.body.climate
+            article.climate= req.body.climate //Patrick Wood's additions start from here to crime
             article.locale=req.body.locale
             article.smith=req.body.smith
             article.farm=req.body.farm

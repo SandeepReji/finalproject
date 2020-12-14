@@ -15,7 +15,7 @@ const articleSchema = new mongoose.Schema({
   description: {
     type: String
   },
-  climate: {
+  climate: {                                                                                                                        //Patrick Wood's addtions start from here to crime
     type: String,
     enum: ["Cave","Desert","Forest","Frozen","Island","Jungle","Mountain","Oceanic","Savannah","Swamp","Temperate","Wasteland"]
   },
