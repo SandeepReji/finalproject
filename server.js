@@ -8,6 +8,7 @@ const methodOverride = require('method-override')
 const Article = require('./models/article')
 const bodyParser = require('body-parser');
 
+
 mongoose.connect('mongodb://localhost/blog', { useNewUrlParser : true, useUnifiedTopology: true, useCreateIndex: true}, )
 mongoose.Promise = global.Promise;
 
@@ -16,7 +17,7 @@ var nameSchema = new mongoose.Schema({
     password: String
 });
 
-app.post("/addname", (req, res) => {
+app.post("/addaccount", (req, res) => {
     var myData = new User(req.body);
     myData.save()
       .then(item => {
