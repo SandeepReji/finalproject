@@ -1,12 +1,60 @@
-<div class="form-group">
-    <label for="title">Title</label>
+div class="form-group">
+    <label for="title"><h2>Title</h2></label>
     <input required value="<%= article.title %>" 
     type="text" name="title" id="title" class="form-control">
 </div>
 
   <div class="form-group">
-    <label for="description">Description</label>
+    <label for="description"><h2>Description</h2></label>
     <textarea name="description" id="description" class="form-control"><%= article.description %></textarea>
+  </div>
+
+  <div class="form-group">
+    <h2>Climate</h2><br>
+    <select input required value="<%= article.climate %>" id="climate" name="climate">
+      <option value="Cave">Cave</option>
+      <option value="Desert">Desert</option>
+      <option value="Forest">Forest</option>
+      <option value="Frozen">Frozen</option>
+      <option value="Island">Island</option>
+      <option value="Jungle">Jungle</option>
+      <option value="Mountain">Mountain</option>
+      <option value="Oceanic">Oceanic</option>
+      <option value="Savannah">Savannah</option>
+      <option value="Swamp">Swamp</option>
+      <option value="Temperate">Temperate</option>
+      <option value="Wasteland">Wasteland</option>
+    </select>
+  </div>
+  
+  <div class="form-group">
+    <h2>Locale Type</h2>
+    <select input required value="<%= article.locale %>" id="locale" name="locale">
+      <option value="Hamlet">Hamlet</option>
+      <option value="Village">Village</option>
+      <option value="Town">Town</option>
+      <option value="City">City</option>
+      <option value="Keep">Keep</option>
+      <option value="Fort">Fort</option>
+      <option value="Castle">Castle</option>
+      <option value="Stronghold">Stronghold</option>
+      <option value="Capital">Capital</option>
+    </select>
+  </div>
+
+  <div class="form-group">
+    <h2>Amenities</h2><br>
+    <h3>Smiths</h3>
+    <p>Hold down the Ctrl (windows) or Command (Mac) button to select multiple options.</p>
+    <select input required value="<%= article.smith %>" id="smith" name="smith" multiple size=7>
+      <option value="Blacksmith">Blacksmith</option>
+      <option value="Fletcher">Fletcher</option>
+      <option value="Goldsmith">Goldsmith</option>
+      <option value="Gunsmith">Gunsmith</option>
+      <option value="Locksmith">Locksmith</option>
+      <option value="Pewtersmith">Pewtersmith</option>
+      <option value="Silversmith">Smith</option>
+    </select>
   </div>
 
   <div class="form-group">

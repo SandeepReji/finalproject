@@ -44,6 +44,9 @@ function saveArticleAndRedirect(path){
 
             article.title = req.body.title
             article.description = req.body.description
+            article.climate= req.body.climate
+            article.locale=req.body.locale
+            article.smith=req.body.smith
             article.markdown = req.body.markdown
         try{
             article = await article.save()

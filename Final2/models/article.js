@@ -15,6 +15,18 @@ const articleSchema = new mongoose.Schema({
   description: {
     type: String
   },
+  climate: {
+    type: String,
+    enum: ["Cave","Desert","Forest","Frozen","Island","Jungle","Mountain","Oceanic","Savannah","Swamp","Temperate","Wasteland"]
+  },
+  locale: {
+    type: String,
+    enum: ["Hamlet","Village","Town","City","Keep","Fort","Castle","Stronghold","Capital"]
+  },
+  smith: {
+    type: String,
+    enum: ["Blacksmith","Fletcher","Goldsmith","Gunsmith","Locksmith","Pewtersmith","Silversmith"]
+  },
   markdown: {
     type: String,
     required: true

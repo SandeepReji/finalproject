@@ -1,4 +1,3 @@
-//Sandeep Reji
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -18,9 +17,20 @@
       </div>
       <a href="/" class="btn btn-secondary">All Articles</a>
   
+      <div>
+        <%- article.description %>
+        <br>
+        <b>Climate: </b><%- article.climate %>
+        <br>
+        <b>Locale Type: </b><%- article.locale %>
+        <br><br>
+        <h3>Amenities</h3>
+        <b>Smiths: </b><%- article.smith %>
+      </div>
+    
       <a href="/articles/edit/<%= article.id %>" 
           class="btn btn-info">Edit</a>
-  
+
       <div>
         <%- article.sanitizedHtml %>
       </div>
