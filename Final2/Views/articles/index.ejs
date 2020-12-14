@@ -1,4 +1,5 @@
 <!--Sandeep Reji-->
+<!--Index of Created Locations-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,11 +11,11 @@
     <title>Blog</title>
 </head>
 <body>
-    <div class="container">
+    <div class="container"> <!--Button to create a new location-->
     <h1 class="mb-4"></h1>Location Generator</h1>
     <a href = "/articles/new" class="btn btn-success">Click here to Generate New Location</a>
 
-    <% articles.forEach(article => { %>
+    <% articles.forEach(article => { %>  <!--Will print out the title and description of each-->
         <div class="card mt-4">
           <div class="card-body">
             <h4 class="card-title"><%= article.title %></h4>
@@ -24,11 +25,11 @@
                 <div class="card-text mb-2"><%=
                     article.description %></div>
                     <a href="articles/<%= article.slug %>"class="btn 
-                        btn-primary">Read More</a>
+                        btn-primary">Read More</a>                      <!--Will go more indepth for each location, including the climate, locale type, and amenities-->
 
                         
-                        <form action="/articles/<%= article.id %>?_method=DELETE"
-                            method="POST" class="d-inline">
+                        <form action="/articles/<%= article.id %>?_method=DELETE" 
+                            method="POST" class="d-inline">                         <!--Delete button to delete an individual location-->
                         <button type="submit" class="btn btn-danger">Delete</button>
 
             
