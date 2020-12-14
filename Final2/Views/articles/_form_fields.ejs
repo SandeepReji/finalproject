@@ -16,6 +16,7 @@
     <select input required value="<%= article.climate %>" id="climate" name="climate">
       <option value="Cave">Cave</option>
       <option value="Desert">Desert</option>
+      <option value="Dungeon">Dungeon</option>
       <option value="Forest">Forest</option>
       <option value="Frozen">Frozen</option>
       <option value="Island">Island</option>
@@ -67,6 +68,10 @@
       <td></td><td></td><td></td>
       <td>
         <h3>Crime</h3>
+      </td>
+      <td></td><td></td><td></td>
+      <td>
+        <h3>Wordsmiths</h3>
       </td>
     </tr>
     <tr>
@@ -121,6 +126,17 @@
           <option value="Smuggler">Smuggler</option>
         </select>
       </td>
+      <td></td><td></td><td></td>
+      <td>
+        <select input value="<%= article.words %>" id="words" name="words" multiple>
+          <option value="Book Merchant">Book Merchant</option>
+          <option value="Calligrapher">Calligrapher</option>
+          <option value="Cartographer">Cartographer</option>
+          <option value="Crier">Crier</option>
+          <option value="Courier">Courier</option>
+          <option value="Library">Library</option>
+          <option value="Printer">Printer</option>
+        </select>
     </tr>
     </table>
   </div>

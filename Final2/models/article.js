@@ -17,7 +17,7 @@ const articleSchema = new mongoose.Schema({
   },
   climate: {                                                                                                                        //Patrick Wood's addtions start from here to crime
     type: String,
-    enum: ["Cave","Desert","Forest","Frozen","Island","Jungle","Mountain","Oceanic","Savannah","Swamp","Temperate","Wasteland"]
+    enum: ["Cave","Desert","Dungeon","Forest","Frozen","Island","Jungle","Mountain","Oceanic","Savannah","Swamp","Temperate","Wasteland"]
   },
   locale: {
     type: String,
@@ -42,6 +42,10 @@ const articleSchema = new mongoose.Schema({
   crime: {
     type: String,
     enum: ["Black Market","Bootlegger","Corrupt Official","Fence","Gang","Pirate Den","Smuggler"]
+  },
+  words: {
+    type: String,
+    enum: ["Book Merchant","Calligrapher","Cartographer","Crier","Courier","Library","Printer"]
   },
   markdown: {
     type: String,

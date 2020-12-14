@@ -53,6 +53,7 @@ function saveArticleAndRedirect(path){
             article.mage=req.body.mage
             article.faith=req.body.faith
             article.crime=req.body.crime
+            article.words=req.body.words
             article.markdown = req.body.markdown
         try{
             article = await article.save()
