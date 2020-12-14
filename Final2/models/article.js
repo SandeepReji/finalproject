@@ -47,6 +47,10 @@ const articleSchema = new mongoose.Schema({
     type: String,
     enum: ["Book Merchant","Calligrapher","Cartographer","Crier","Courier","Library","Printer"]
   },
+  fun: {
+    type: String,
+    enum: ["Bard","Jester","Skald","Theater"]
+  },
   markdown: {
     type: String,
     required: true

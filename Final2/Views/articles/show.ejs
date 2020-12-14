@@ -18,10 +18,10 @@
         <%= article.createdAt.toLocaleDateString() %>
       </div>
       <a href="/" class="btn btn-secondary">All Articles</a>
-  
       <div>
-        <%- article.description %>
         <br>
+        <b>Description: </b><%- article.description %>
+        <br><br>
         <b>Climate: </b><%- article.climate %>
         <br>
         <b>Locale Type: </b><%- article.locale %>
@@ -38,8 +38,10 @@
         <b>Crime: </b><%- article.crime %>
         <br>
         <b>Wordsmiths: </b><%- article.words %>
+        <br>
+        <b>Theater: </b><%- article.fun %>
       </div>
-    
+    <br>
       <a href="/articles/edit/<%= article.id %>" 
           class="btn btn-info">Edit</a>
 
