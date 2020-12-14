@@ -47,6 +47,10 @@ function saveArticleAndRedirect(path){
             article.climate= req.body.climate
             article.locale=req.body.locale
             article.smith=req.body.smith
+            article.farm=req.body.farm
+            article.mage=req.body.mage
+            article.faith=req.body.faith
+            article.crime=req.body.crime
             article.markdown = req.body.markdown
         try{
             article = await article.save()

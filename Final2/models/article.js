@@ -27,6 +27,22 @@ const articleSchema = new mongoose.Schema({
     type: String,
     enum: ["Blacksmith","Fletcher","Goldsmith","Gunsmith","Locksmith","Pewtersmith","Silversmith"]
   },
+  farm: {
+    type: String,
+    enum: ["Beekeeper","Farmer","Herbalist","Orchadist","Rancher"]
+  },
+  mage: {
+    type: String,
+    enum: ["Alchemist","Enchanter","Fortune Teller","Healer","Potion Seller"]
+  },
+  faith: {
+    type: String,
+    enum: ["Graveyard","Shrine","Temple"]
+  },
+  crime: {
+    type: String,
+    enum: ["Black Market","Bootlegger","Corrupt Official","Fence","Gang","Pirate Den","Smuggler"]
+  },
   markdown: {
     type: String,
     required: true

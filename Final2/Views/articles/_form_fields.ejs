@@ -1,4 +1,4 @@
-div class="form-group">
+<div class="form-group">
     <label for="title"><h2>Title</h2></label>
     <input required value="<%= article.title %>" 
     type="text" name="title" id="title" class="form-control">
@@ -44,17 +44,83 @@ div class="form-group">
 
   <div class="form-group">
     <h2>Amenities</h2><br>
-    <h3>Smiths</h3>
     <p>Hold down the Ctrl (windows) or Command (Mac) button to select multiple options.</p>
-    <select input required value="<%= article.smith %>" id="smith" name="smith" multiple size=7>
-      <option value="Blacksmith">Blacksmith</option>
-      <option value="Fletcher">Fletcher</option>
-      <option value="Goldsmith">Goldsmith</option>
-      <option value="Gunsmith">Gunsmith</option>
-      <option value="Locksmith">Locksmith</option>
-      <option value="Pewtersmith">Pewtersmith</option>
-      <option value="Silversmith">Smith</option>
-    </select>
+    <table align>
+    <tr>
+      <td>
+        <h3>Smiths</h3>
+      </td>
+      <td></td><td></td><td></td>
+      <td>
+        <h3>Agriculture & Horticulture</h3>
+      </td>
+      <td></td><td></td><td></td>
+      <td>
+        <h3>Magical</h3>
+      </td>
+      <td></td><td></td><td></td>
+      <td>
+        <h3>Religion</h3>
+      </td>
+      <td></td><td></td><td></td>
+      <td>
+        <h3>Crime</h3>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <select input value="<%= article.smith %>" id="smith" name="smith" multiple size=7>
+          <option value="Blacksmith">Blacksmith</option>
+          <option value="Fletcher">Fletcher</option>
+          <option value="Goldsmith">Goldsmith</option>
+          <option value="Gunsmith">Gunsmith</option>
+          <option value="Locksmith">Locksmith</option>
+          <option value="Pewtersmith">Pewtersmith</option>
+          <option value="Silversmith">Smith</option>
+        </select>
+      </td>
+      <td></td><td></td><td></td>
+      <td style="text-align:center">
+        <select input value="<%= article.farm %>" id="farm" name="farm" multiple>
+          <option value="Beekeeper">Beekeeper</option>
+          <option value="Farmer">Farmer</option>
+          <option value="Herbalist">Herbalist</option>
+          <option value="Orchadist">Orchadist</option>
+          <option value="Rancher">Rancher</option>
+        </select>
+      </td>
+      <td></td><td></td><td></td>
+      <td>
+        <select input value="<%= article.mage %>" id="mage" name="mage" multiple size="7">
+          <option value="Alchemist">Alchemist</option>
+          <option value="Enchanter">Enchanter</option>
+          <option value="Fortune Teller">Fortune Teller</option>
+          <option value="Healer">Healer</option>
+          <option value="Potion Seller">Potion Seller</option>
+        </select>
+      </td>
+      <td></td><td></td><td></td>
+      <td>
+        <select input value="<%= article.faith %>" id="faith" name="faith" multiple>
+          <option value="Graveyard">Graveyard</option>
+          <option value="Shrine">Shrine</option>
+          <option value="Temple">Temple</option>
+        </select>
+      </td>
+      <td></td><td></td><td></td>
+      <td>
+        <select input value="<%= article.crime %>" id="crime" name="crime" multiple size="7">
+          <option value="Black Market">Black Market</option>
+          <option value="Bootlegger">Bootlegger</option>
+          <option value="Corrupt Official">Corrupt Official</option>
+          <option value="Fence">Fence</option>
+          <option value="Gang">Gang</option>
+          <option value="Pirate Den">Pirate Den</option>
+          <option value="Smuggler">Smuggler</option>
+        </select>
+      </td>
+    </tr>
+    </table>
   </div>
 
   <div class="form-group">
